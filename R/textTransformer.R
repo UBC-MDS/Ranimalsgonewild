@@ -6,7 +6,6 @@
 #' @export
 #'
 #' @examples
-textTransformer () <- function(string) {
-  #placeholder
-  1 + 1
+textTransformer <- function(string) {
+  input = string
 }

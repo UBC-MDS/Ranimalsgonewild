@@ -7,15 +7,14 @@ Authors@R:
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
 Description: This package is designed to demonstrate how basic features of text
-analysis can be utilized to analyze and represent a text file or string while 
-applying a humorous lens (because what is data science without a dash of 
-humor!). It counts the number of words from a text, calculates the average word
-length of that text, and returns an animal image corresponding to the average
-word length. It subsequently transforming the text into a wordcloud in the 
-shape of the animal. We have included a bonus fourth function for fun, inspired 
-by the popular childhood game - MadLibs.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+  analysis can be utilized to analyze and represent a text file or string while 
+  applying a humorous lens (because what is data science without a dash of 
+  humor!). It counts the number of words from a text, calculates the average word
+  length of that text, and returns an animal image corresponding to the average
+  word length. It subsequently transforming the text into a wordcloud in the 
+  shape of the animal. We have included a bonus fourth function for fun, inspired 
+  by the popular childhood game - MadLibs.
+License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)

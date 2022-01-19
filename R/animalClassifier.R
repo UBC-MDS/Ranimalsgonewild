@@ -6,6 +6,6 @@
 #' @export
 #'
 #' @examples
-#' animalClassifier("check out this text")
+#' animalClassifier("input text should be string")
 animalClassifier <- function(text){
 }

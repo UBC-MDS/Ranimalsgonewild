@@ -86,3 +86,8 @@ contributing to this project, you agree to abide by its terms.
 Junrong Zhu, Kyle Maj, Morgan Rosenberg
 
 It is licensed under the terms of the MIT license.
+
+## Credits
+
+`Ranimalsgonewild` was created using the tutorial in
+[`The Whole Game`](https://r-pkgs.org/whole-game.html)

@@ -16,7 +16,9 @@ the text into a wordcloud in the shape of the animal. We have included a
 bonus fourth function for fun, inspired by the popular childhood game -
 MadLibs.
 
-#Contributors Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
+# Contributors
+
+Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 
 ## Installation
 

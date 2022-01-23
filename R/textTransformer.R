@@ -1,11 +1,13 @@
-#' Title
+#' This function modifies a block of text by replacing all nouns with an animal.
 #'
-#' @param string
+#' @param text String Character
 #'
-#' @return
+#' @return a string with the modified text
 #' @export
 #'
 #' @examples
-textTransformer <- function(string) {
-  input = string
+#' text = "The dashing chef walked across the road"
+#' textTransformer(text)
+textTransformer <- function(text) {
+  input = text
 }

@@ -1,5 +1,3 @@
-library(stringr)
-
 #' This function modifies a block of text by randomly replacing a set
 #' number of words with a random animal.
 #'
@@ -18,10 +16,10 @@ textTransformer <- function(text, num_words=1) {
     random_index <- floor(sample(1:length(word_list), 
                                  num_words, 
                                  replace = FALSE))
-    
+
     for (i in random_index){
     word_list[i] = animal_list[[sample(1:length(animal_list), 1)]]
     }
-    
+
     paste(word_list, collapse=' ')
 }

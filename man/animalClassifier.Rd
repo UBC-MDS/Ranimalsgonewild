@@ -2,7 +2,8 @@
 % Please edit documentation in R/animalClassifier.R
 \name{animalClassifier}
 \alias{animalClassifier}
-\title{Classify the input text as an animal}
+\title{Classify the input text as an animal
+based on the proportion of unique words}
 \usage{
 animalClassifier(text)
 }
@@ -14,7 +15,10 @@ A character, the classified animal type
 }
 \description{
 Classify the input text as an animal
+based on the proportion of unique words
 }
 \examples{
-animalClassifier("input text should be string")
+library(tidyverse)
+library(tm)
+animalClassifier("I just caught a pikachu!")
 }

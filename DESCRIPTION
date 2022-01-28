@@ -31,6 +31,7 @@ Imports:
     wordcloud2 (>= 0.2.2),
     tm (>= 0.7.8),
     SnowballC,
-    wordcloud
+    wordcloud,
+    imager
 Remotes: 
     lchiffon/wordcloud2

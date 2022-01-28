@@ -1,5 +1,3 @@
-library(test_that)
-
 #check output datatype
 test_that("output datatype is correct", {
   expect_equal(typeof("string"), typeof(animalClassifier("one, two three!")))

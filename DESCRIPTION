@@ -24,4 +24,13 @@ Suggests:
 Config/testthat/edition: 3
 Imports: 
     wordCloud,
-    stringr
+    stringr,
+    RCurl,
+    XML,
+    htm2txt,
+    wordcloud2 (>= 0.2.2),
+    tm (>= 0.7.8),
+    SnowballC,
+    wordcloud
+Remotes: 
+    lchiffon/wordcloud2

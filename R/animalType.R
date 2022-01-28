@@ -17,6 +17,13 @@
 library(imager)
 library(testthat)
 animalType <- function(species, text){
+  if (!is.character(species)) {
+    stop("Species is not a string")
+  }
+
+  if (!is.character(text)) {
+    stop("Text is not a string")
+  }
   words <- gsub('[[:punct:]]+','',text)
 
   iq = "smart"
@@ -28,7 +35,6 @@ animalType <- function(species, text){
   if (avg < 5) {iq = "dumb"}
 
   filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
-  filename
 
   plot(load.image(filename))
 }

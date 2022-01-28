@@ -25,9 +25,10 @@ wordCloud <- function(link) {
   }
 
   #CONVERTING WEBLINK CONTENT INTO A TEXT FILE
-  txt <- htm2txt(link)
-  graphics.off()
-  par(mar = rep(2, 4))
+  txt <- htm2txt::htm2txt(link)
+  grDevices::graphics.off()
+  graphics::par(mar = rep(2, 4))
+
   source('http://www.sthda.com/upload/rquery_wordcloud.r')
 
   #CREATING A DF WITH WORDS AND FREQUENCY OF OCCURENCE
@@ -41,16 +42,16 @@ wordCloud <- function(link) {
 
   #SPITTING OUT WORDCLOUDS AS NAMES OF ANIMALS CONSTRUCTED FROM TEXT FROM THE WEBSITE BASED ON LENGTH
   if (len1 <= 1000) {
-    letterCloud(freqTable1, word = "DUCK")
+    wordcloud2::letterCloud(freqTable1, word = "DUCK")
     len <- len1
   } else if (len1 > 1000 & len1 <= 2000) {
-    letterCloud(freqTable1, word = "MONKEY")
+    wordcloud2::letterCloud(freqTable1, word = "MONKEY")
     len <- len1
   } else if (len1>2000 & len1<=3000) {
-    letterCloud(freqTable1, word ="GIRAFFE")
+    wordcloud2::letterCloud(freqTable1, word ="GIRAFFE")
     len <- len1
   } else {
-    letterCloud(freqTable1, word = "WHALE")
+    wordcloud2::letterCloud(freqTable1, word = "WHALE")
     len <- len1
   }
 

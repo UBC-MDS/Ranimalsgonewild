@@ -10,6 +10,10 @@
 #' library(tidyverse)
 #' library(tm)
 #' animalClassifier("I just caught a pikachu!")
+#'
+library(tidyverse)
+library(tm)
+
 animalClassifier <- function(text){
   output <- NULL
   ratio <- NULL
@@ -19,7 +23,7 @@ animalClassifier <- function(text){
     strsplit(' ') |>
     unlist()
 
-  if(!is.character(textx)){
+  if(!is.character(text)){
     stop("Inappropriate input data type! Text should be character")
   }
 
@@ -40,6 +44,8 @@ animalClassifier <- function(text){
     } else {
       output <- animal_list[4]
     }
+
+    return(output)
 
 }
 

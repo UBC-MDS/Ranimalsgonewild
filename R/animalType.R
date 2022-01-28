@@ -13,21 +13,28 @@
 #' text <- "Pie's abundantly awesome"
 #' species <- "Duck"
 #' animal_rep <- animalType(species, text)
+
+library(imager)
+library(testthat)
 animalType <- function(species, text){
-  words <- gsub('[[:punct:] ]+','',text) |>
-    strsplit(' ') |>
-    unlist()
-  
+  if (!is.character(species)) {
+    stop("Species is not a string")
+  }
+
+  if (!is.character(text)) {
+    stop("Text is not a string")
+  }
+  words <- gsub('[[:punct:]]+','',text)
+
   iq = "smart"
   avg <- 0
-  
-  for (w in words) {avg <- avg + length(w)}
-  avg <- avg/length(words)
-  
+
+  for (w in words) {avg <- avg + nchar(w)}
+  avg <- avg/length(strsplit(words, " ")[[1]])
+
   if (avg < 5) {iq = "dumb"}
-  
+
   filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
-  filename
-  
+
   plot(load.image(filename))
 }

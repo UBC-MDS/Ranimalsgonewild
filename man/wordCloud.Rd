@@ -2,19 +2,20 @@
 % Please edit documentation in R/wordCloud.R
 \name{wordCloud}
 \alias{wordCloud}
-\title{Inputs a text URL to return a wordcloud in the shape of the animal created using the text of the URL based on text length and the name of the animal.}
+\title{Title: This function modifies a block of text by randomly replacing a set number of words with wordcloud of a random animal's name.}
 \usage{
 wordCloud(link)
 }
 \arguments{
-\item{link}{A character vector with the URL of a website.}
+\item{link}{String Character}
 }
 \value{
-A wordcloud image in the shape of the animal.
+an image with the wordcloud
 }
 \description{
-Inputs a text URL to return a wordcloud in the shape of the animal created using the text of the URL based on text length and the name of the animal.
+Title: This function modifies a block of text by randomly replacing a set number of words with wordcloud of a random animal's name.
 }
 \examples{
+link = "https://www.britannica.com/place/Japan"
 wordCloud(link)
 }

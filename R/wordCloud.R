@@ -24,16 +24,6 @@ wordCloud <- function(link) {
     stop("Incorrect amount of input values! Expecting only 1 input text string.")
   }
 
-  #DEPENDENCIES
-  library(RCurl)
-  library(XML)
-  library(htm2txt)
-  library(wordcloud2)
-  library(tm)
-  library(SnowballC)
-  library(wordcloud)
-  library(wordcloud2)
-
   #CONVERTING WEBLINK CONTENT INTO A TEXT FILE
   txt <- htm2txt(link)
   graphics.off()

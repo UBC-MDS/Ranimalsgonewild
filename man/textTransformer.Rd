@@ -2,16 +2,24 @@
 % Please edit documentation in R/textTransformer.R
 \name{textTransformer}
 \alias{textTransformer}
-\title{Title}
+\title{This function modifies a block of text by randomly replacing a set
+number of words with a random animal.}
 \usage{
-textTransformer(string)
+textTransformer(text, num_words = 1)
 }
 \arguments{
-\item{string}{}
+\item{text}{String Character}
+
+\item{num_words}{Integer}
 }
 \value{
-
+a string with the modified text
 }
 \description{
-Title
+This function modifies a block of text by randomly replacing a set
+number of words with a random animal.
+}
+\examples{
+text = "Your chances of being ambushed by a duck are low... but never zero!"
+textTransformer(text)
 }

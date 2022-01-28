@@ -14,4 +14,20 @@
 #' species <- "Duck"
 #' animal_rep <- animalType(species, text)
 animalType <- function(species, text){
+  words <- gsub('[[:punct:] ]+','',text) |>
+    strsplit(' ') |>
+    unlist()
+  
+  iq = "smart"
+  avg <- 0
+  
+  for (w in words) {avg <- avg + length(w)}
+  avg <- avg/length(words)
+  
+  if (avg < 5) {iq = "dumb"}
+  
+  filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
+  filename
+  
+  plot(load.image(filename))
 }

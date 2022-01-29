@@ -44,4 +44,5 @@ animalType <- function(species, text){
     filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
   }
   plot(load.image(filename))
+  paste0(iq,"_", species)
 }

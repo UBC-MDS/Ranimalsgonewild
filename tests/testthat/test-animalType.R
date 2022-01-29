@@ -6,7 +6,7 @@ test_that("fails to return dumb duck on small word length text", {
   dir <- dirname(dir)
   filename <- paste(dir, "/imgs/dumb_Duck.jpeg", sep = "")
   dumb_duck <- load.image(filename)
-  expect_equal(animalType("Duck", small_words), dumb_duck)
+  expect_equal(animalType("Duck", small_words), "dumb_Duck")
 })
 
 test_that("fails to return smart giraffe on large word length text", {
@@ -16,7 +16,7 @@ test_that("fails to return smart giraffe on large word length text", {
   big_words = "inscrutable or at least esoteric language."
   filename <- paste(dir, "/imgs/smart_Giraffe.jpeg", sep = "")
   smart_giraffe <- load.image(filename)
-  expect_equal(animalType("Giraffe", big_words), smart_giraffe)
+  expect_equal(animalType("Giraffe", big_words), "smart_Giraffe")
 })
 test_that("fails to return dumb whale in text with punctuation", {
   dir <- dirname(getwd())
@@ -25,5 +25,5 @@ test_that("fails to return dumb whale in text with punctuation", {
   bad_words = "hi' my; na/me is j!ohn and I am simple"
   filename <- paste(dir, "/imgs/dumb_Whale.jpeg", sep = "")
   dumb_whale <- load.image(filename)
-  expect_equal(animalType("Whale", bad_words), dumb_whale)
+  expect_equal(animalType("Whale", bad_words), "dumb_Whale")
 })

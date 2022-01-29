@@ -34,14 +34,16 @@ animalType <- function(species, text){
 
   if (avg < 5) {iq = "dumb"}
 
-  if (endsWith(getwd(), "testthat")){
+  if (endsWith(getwd(), "Ranimalsgonewild/tests/testthat")){
     dir <- dirname(getwd())
     dir <- dirname(dir)
     filename <- paste(dir, "/imgs/",iq, "_", species, ".jpeg", sep = "")
     plot(load.image(filename))
   }
-  else{
+  else if(endsWith(getwd(), "Ranimalsgonewild")){
     filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
+  } else {
+    return (paste0(iq,"_", species))
   }
   plot(load.image(filename))
   paste0(iq,"_", species)

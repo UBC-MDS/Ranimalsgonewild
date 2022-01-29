@@ -7,11 +7,9 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
 #' library(tm)
 #' animalClassifier("I just caught a pikachu!")
 #'
-library(tidyverse)
 library(tm)
 
 animalClassifier <- function(text){

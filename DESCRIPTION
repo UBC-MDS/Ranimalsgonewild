@@ -19,8 +19,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-Suggests: 
-    testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Imports: 
     stringr,
@@ -35,6 +33,7 @@ Imports:
     tm (>= 0.7.8),
     SnowballC,
     wordcloud,
-    imager
+    imager,
+    testthat
 Remotes: 
     lchiffon/wordcloud2

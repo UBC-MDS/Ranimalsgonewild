@@ -53,6 +53,12 @@ development version of `Ranimalsgonewild` from
 devtools::install_github("UBC-MDS/Ranimalsgonewild")
 ```
 
+If you met an error message saying: “Error in load.image(filename) :
+could not find function ‘load.image’”, please make sure to run the
+following line to proceed:
+
+    library(imager)
+
 ## Usage
 
 This package can be used in conjunction with any code to read in

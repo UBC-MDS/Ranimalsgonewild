@@ -13,9 +13,6 @@
 #' text <- "Pie's abundantly awesome"
 #' species <- "Duck"
 #' animal_rep <- animalType(species, text)
-
-library(imager)
-library(testthat)
 animalType <- function(species, text){
   if (!is.character(species)) {
     stop("Species is not a string")

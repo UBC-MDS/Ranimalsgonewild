@@ -10,8 +10,6 @@
 #' library(tm)
 #' animalClassifier("I just caught a pikachu!")
 #'
-library(tm)
-
 animalClassifier <- function(text){
   output <- NULL
   ratio <- NULL

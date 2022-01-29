@@ -37,7 +37,8 @@ animalType <- function(species, text){
   if (endsWith(getwd(), "testthat")){
     dir <- dirname(getwd())
     dir <- dirname(dir)
-    filename <- paste(dir, "/imgs/dumb_Duck.jpeg", sep = "")
+    filename <- paste(dir, "/imgs/",iq, "_", species, ".jpeg", sep = "")
+    plot(load.image(filename))
   }
   else{
     filename <- paste0("./imgs/",iq, "_", species, ".jpeg")

@@ -36,3 +36,5 @@ Imports:
     testthat
 Remotes: 
     lchiffon/wordcloud2
+Suggests: 
+    covr

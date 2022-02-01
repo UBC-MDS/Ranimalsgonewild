@@ -19,3 +19,11 @@ test_that("output value is correct", {
 test_that("output value is correct", {
   expect_equal("Whale", animalClassifier("one"))
 })
+
+test_that("input value type is incorrect", {
+  expect_error(animalClassifier(123))
+})
+
+test_that("input value length is incorrect", {
+  expect_error(animalClassifier(123))
+})

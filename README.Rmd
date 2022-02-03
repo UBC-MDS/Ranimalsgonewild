@@ -96,7 +96,7 @@ wordCloud(link)
 
 ### Function 4: textTransformer
 
-This function takes a sequence of text(character) and a species(character), and returns a modified text sequence with a random animal name in it.
+This function takes a sequence of text(character) and a species(character), and randomly replaces a set number of words with a random animal.
 
 ``` r
 text = "Your chances of being ambushed by a duck are low... but never zero!"

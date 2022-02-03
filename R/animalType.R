@@ -1,7 +1,7 @@
 #' Analyzes text based on average word length and returns an animal picture representing language complexity.
 #'
 #' @param text A string of characters to be analyzed
-#' @param species A string representing species, must be one of ["Duck", "Monkey", "Giraffe", "Whale"]
+#' @param species A string representing species, must be one of "Duck", "Monkey", "Giraffe", "Whale"
 #'
 #' @return A jpeg of an animal
 #' @export

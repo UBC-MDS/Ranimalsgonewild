@@ -7,7 +7,7 @@
 animalType(species, text)
 }
 \arguments{
-\item{species}{A string representing species, must be one of \link{"Duck", "Monkey", "Giraffe", "Whale"}}
+\item{species}{A string representing species, must be one of "Duck", "Monkey", "Giraffe", "Whale"}
 
 \item{text}{A string of characters to be analyzed}
 }

@@ -37,4 +37,7 @@ Imports:
 Remotes: 
     lchiffon/wordcloud2
 Suggests: 
-    covr
+    knitr,
+    covr,
+    rmarkdown
+VignetteBuilder: knitr

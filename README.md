@@ -4,6 +4,9 @@
 # Ranimalsgonewild
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/UBC-MDS/Ranimalsgonewild/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/Ranimalsgonewild/actions)
+
 <!-- badges: end -->
 
 This package is designed to demonstrate how basic features of text
@@ -72,8 +75,8 @@ library(Ranimalsgonewild)
 
 ### Function 1: animalClassifier
 
-This function takes a sequence of text(str), counts the words in the
-string, and then returns an animal type (str).
+This function takes a sequence of text(character), counts the words in
+the string, and then returns an animal type (character).
 
 ``` r
 animalClassifier("I just caught a pikachu!")
@@ -83,8 +86,7 @@ animalClassifier("I just caught a pikachu!")
 
 This function takes a sequence of text(str) and a species (str),
 determines the average word length (proxy for language complexity), and
-returns an smart looking animal image (jpg) corresponding to the average
-word length.
+returns an animal image (jpg) corresponding to the average word length.
 
 ``` r
 text <- "Pie's abundantly awesome"
@@ -95,10 +97,9 @@ animal_rep <- animalType(species, text)
 ### Function 3: wordCloud
 
 This function takes a website link for which a wordcloud is to be
-generated as a text variable: text(str). It displays a wordcloud with
-the characters from the text of the website embedded onto a wordcloud of
-the name of the animal in block letters, and returns the length of the
-text (int).
+generated as a text variable: text(character). It displays a wordcloud
+with the characters from the text of the website embedded onto a
+wordcloud image.
 
 ``` r
 link = "https://www.britannica.com/place/Japan"
@@ -107,9 +108,9 @@ wordCloud(link)
 
 ### Function 4: textTransformer
 
-This function takes a sequence of text(str) and a species(str), and
-returns a new text sequence where all proper nouns are replaced with the
-species.
+This function takes a sequence of text(character) and a
+species(character), and randomly replaces a set number of words with a
+random animal.
 
 ``` r
 text = "Your chances of being ambushed by a duck are low... but never zero!"

@@ -5,6 +5,7 @@
 #'
 #' @return A jpeg of an animal
 #' @export
+#' @import imager
 #'
 #' @examples
 #' text <- "I like pie"

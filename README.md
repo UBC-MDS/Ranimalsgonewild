@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/UBC-MDS/Ranimalsgonewild/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/Ranimalsgonewild/actions)
+[![codecov](https://codecov.io/gh/UBC-MDS/Ranimalsgonewild/branch/main/graph/badge.svg?token=V2GblMbnZy)](https://codecov.io/gh/UBC-MDS/Ranimalsgonewild)
 
 <!-- badges: end -->
 

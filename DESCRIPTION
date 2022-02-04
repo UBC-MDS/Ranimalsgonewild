@@ -35,7 +35,8 @@ Imports:
     wordcloud,
     testthat
 Remotes: 
-    lchiffon/wordcloud2
+    lchiffon/wordcloud2,
+    dahtah/imager
 Suggests: 
     knitr,
     covr,

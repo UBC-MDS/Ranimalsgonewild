@@ -24,18 +24,18 @@ Imports:
     stringr,
     graphics,
     grDevices,
-    imager,
     png,
     RCurl,
     XML,
     htm2txt,
+    imager,
     wordcloud2 (>= 0.2.2),
     tm (>= 0.7.8),
     SnowballC,
     wordcloud,
     testthat
 Remotes: 
-    lchiffon/wordcloud2
+    lchiffon/wordcloud2,
 Suggests: 
     knitr,
     covr,

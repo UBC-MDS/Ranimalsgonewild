@@ -28,6 +28,7 @@ Imports:
     RCurl,
     XML,
     htm2txt,
+    imager,
     wordcloud2 (>= 0.2.2),
     tm (>= 0.7.8),
     SnowballC,
@@ -38,6 +39,5 @@ Remotes:
 Suggests: 
     knitr,
     covr,
-    rmarkdown,
-    dahtah/imager
+    rmarkdown
 VignetteBuilder: knitr

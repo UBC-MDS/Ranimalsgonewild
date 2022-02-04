@@ -24,7 +24,6 @@ Imports:
     stringr,
     graphics,
     grDevices,
-    imager,
     png,
     RCurl,
     XML,
@@ -35,9 +34,10 @@ Imports:
     wordcloud,
     testthat
 Remotes: 
-    lchiffon/wordcloud2
+    lchiffon/wordcloud2,
 Suggests: 
     knitr,
     covr,
-    rmarkdown
+    rmarkdown,
+    dahtah/imager
 VignetteBuilder: knitr

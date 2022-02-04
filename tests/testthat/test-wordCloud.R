@@ -25,3 +25,11 @@ test_that("Number of words not correct for this link - https://www.britannica.co
 test_that("Number of words not correct for this link - https://en.wikipedia.org/wiki/India", {
   expect_gt(wordCloud("https://en.wikipedia.org/wiki/India"), 3000)
 })
+
+test_that("input value type is incorrect", {
+  expect_error(wordCloud(123))
+})
+
+test_that("input value length is incorrect", {
+  expect_error(wordCloud(123))
+})

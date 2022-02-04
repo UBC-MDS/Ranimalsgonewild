@@ -1,5 +1,13 @@
 library(imager)
 
+test_that("input value type is incorrect", {
+  expect_error(animalType(123, "this is a string"))
+})
+
+test_that("input value type is incorrect", {
+  expect_error(animalType("Duck", 123))
+})
+
 test_that("fails to return dumb duck on small word length text", {
   # for future development tests
   # dir <- dirname(getwd())

@@ -4,6 +4,9 @@
 # Ranimalsgonewild
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/UBC-MDS/Ranimalsgonewild/workflows/R-CMD-check/badge.svg)](https://github.com/UBC-MDS/Ranimalsgonewild/actions)
+
 <!-- badges: end -->
 
 This package is designed to demonstrate how basic features of text
@@ -11,8 +14,8 @@ analysis can be utilized to analyze and represent a text file or string
 while applying a humorous lens (because what is data science without a
 dash of humor!). It counts the number of words from a text, calculates
 the average word length of that text, and returns an animal image
-corresponding to the average word length. It subsequently transforming
-the text into a wordcloud in the shape of the animal. We have included a
+corresponding to the average word length. It subsequently transforms the
+text into a wordcloud in block letters of the animal. We have included a
 bonus fourth function for fun, inspired by the popular childhood game -
 MadLibs.
 
@@ -22,7 +25,30 @@ Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 
 ## Installation
 
-You can install the development version of Ranimalsgonewild from
+Prior to the installation of `Ranimalsgonewild`, you need to download
+several dependency packages on to your hard drive, for this package to
+work. Note that for `wordcloud2`, you need to download the development
+version of the package.
+
+``` r
+# install.packages("devtools")
+# install.packages("stringr")
+# install.packages("graphics")
+# install.packages("grDevices")
+# install.packages("imager")
+# install.packages("png")
+# install.packages("RCurl")
+# install.packages("XML")
+# install.packages("htm2txt")
+# install.packages("tm")
+# install.packages("SnowballC")
+# install.packages("wordcloud")
+# install.packages("testthat")
+# devtools::install_github("lchiffon/wordcloud2")
+```
+
+After ensuring you have the aforementioned packages, you can install the
+development version of `Ranimalsgonewild` from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -30,35 +56,66 @@ You can install the development version of Ranimalsgonewild from
 devtools::install_github("UBC-MDS/Ranimalsgonewild")
 ```
 
+If you met an error message saying: “Error in load.image(filename) :
+could not find function ‘load.image’”, please make sure to run the
+following line to proceed:
+
+    library(imager)
+
 ## Usage
 
 This package can be used in conjunction with any code to read in
 multiple text files to analyze and compare whole corpuses (your software
-must call the Animals Gone Wild functions for each text variable).
+must call the `Ranimalsgonewild` functions for each text variable). Note
+that you must include the library before runnign any of these functions:
+
+``` r
+library(Ranimalsgonewild)
+```
 
 ### Function 1: animalClassifier
 
-This function takes a sequence of text(str), counts the words in the
-string, and then returns an animal type (str).
+This function takes a sequence of text(character), counts the words in
+the string, and then returns an animal type (character).
+
+``` r
+animalClassifier("I just caught a pikachu!")
+```
 
 ### Function 2: animalType
 
 This function takes a sequence of text(str) and a species (str),
 determines the average word length (proxy for language complexity), and
-returns an smart looking animal image (jpg) corresponding to the average
-word length.
+returns an animal image (jpg) corresponding to the average word length.
 
-### Function 3: wordcloud
+``` r
+text <- "Pie's abundantly awesome"
+species <- "Duck"
+animal_rep <- animalType(species, text)
+```
 
-This function takes a sequence of text(str) and an animal image (jpg),
-and returns a wordcloud in the shape of the species comprised of the
-sequence of text (jpg).
+### Function 3: wordCloud
+
+This function takes a website link for which a wordcloud is to be
+generated as a text variable: text(character). It displays a wordcloud
+with the characters from the text of the website embedded onto a
+wordcloud image.
+
+``` r
+link = "https://www.britannica.com/place/Japan"
+wordCloud(link)
+```
 
 ### Function 4: textTransformer
 
-This function takes a sequence of text(str) and a species(str), and
-returns a new text sequence where all proper nouns are replaced with the
-species.
+This function takes a sequence of text(character) and a
+species(character), and randomly replaces a set number of words with a
+random animal.
+
+``` r
+text = "Your chances of being ambushed by a duck are low... but never zero!"
+textTransformer(text)
+```
 
 ### Fit within the R ecosystem:
 
@@ -74,7 +131,7 @@ in front of a computer screen during the pandemic, this package is an
 essential addition to the ecosystem promoting mental wellness through
 humor. By offering it as a package rather than a script, we also empower
 other developers to integrate this is as a fun injection to their coding
-projecs.
+projects.
 
 ## Contributing
 

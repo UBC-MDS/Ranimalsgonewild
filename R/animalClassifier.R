@@ -10,14 +10,12 @@
 #' library(tm)
 #' animalClassifier("I just caught a pikachu!")
 #'
-library(tm)
-
 animalClassifier <- function(text){
   output <- NULL
   ratio <- NULL
 
   animal_list <- c("Duck", "Monkey", "Giraffe", "Whale")
-  cleaned_text <- gsub('[[:punct:]]+','',text) |>
+  cleaned_text <- gsub('[[:punct:]]+','',text)  |>
     strsplit(' ') |>
     unlist()
 

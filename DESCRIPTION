@@ -33,7 +33,11 @@ Imports:
     tm (>= 0.7.8),
     SnowballC,
     wordcloud,
-    imager,
     testthat
 Remotes: 
     lchiffon/wordcloud2
+Suggests: 
+    knitr,
+    covr,
+    rmarkdown
+VignetteBuilder: knitr

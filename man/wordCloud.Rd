@@ -2,7 +2,7 @@
 % Please edit documentation in R/wordCloud.R
 \name{wordCloud}
 \alias{wordCloud}
-\title{Title: This function modifies a block of text by randomly replacing a set number of words with wordcloud of a random animal's name.}
+\title{Title: This function uses a web URL and outputs a wordcloud with its content in the shape of a random animal's name.}
 \usage{
 wordCloud(link)
 }
@@ -13,7 +13,7 @@ wordCloud(link)
 an image with the wordcloud
 }
 \description{
-Title: This function modifies a block of text by randomly replacing a set number of words with wordcloud of a random animal's name.
+Title: This function uses a web URL and outputs a wordcloud with its content in the shape of a random animal's name.
 }
 \examples{
 link = "https://www.britannica.com/place/Japan"

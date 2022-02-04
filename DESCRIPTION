@@ -2,9 +2,9 @@ Package: Ranimalsgonewild
 Title: Animal themed text filters
 Version: 0.0.0.9000
 Authors@R: 
-    person("Kyle", "Maj", , "kyle.maj@gmail.com", role = c("aut", "cre"))
-    person("Junrong", "Zhu", , "Junrong.Zhu@gmail.com", role = c("aut", "cre"))
-    person("Nagraj", "Rao", , "Nagraj.Rao@gmail.com", role = c("aut", "cre"))
+    person("Kyle", "Maj", , "kyle.maj@gmail.com", role = c("aut", "cre")),
+    person("Junrong", "Zhu", , "Junrong.Zhu@gmail.com", role = c("aut", "cre")),
+    person("Nagraj", "Rao", , "Nagraj.Rao@gmail.com", role = c("aut", "cre")),
     person("Morgan", "Rosenberg", , "Morgan.Rosenberg@gmail.com", role = c("aut", "cre"))
 Description: This package is designed to demonstrate how basic features of text
   analysis can be utilized to analyze and represent a text file or string while 

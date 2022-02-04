@@ -5,7 +5,6 @@
 #'
 #' @return A jpeg of an animal
 #' @export
-#' @import imager
 #'
 #' @examples
 #' text <- "I like pie"
@@ -36,13 +35,13 @@ animalType <- function(species, text){
     dir <- dirname(getwd())
     dir <- dirname(dir)
     filename <- paste(dir, "/imgs/",iq, "_", species, ".jpeg", sep = "")
-    plot(load.image(filename))
+    plot(imager::load.image(filename))
   }
   else if(endsWith(getwd(), "Ranimalsgonewild")){
     filename <- paste0("./imgs/",iq, "_", species, ".jpeg")
   } else {
     return (paste0(iq,"_", species))
   }
-  plot(load.image(filename))
+  plot(imager::load.image(filename))
   paste0(iq,"_", species)
 }

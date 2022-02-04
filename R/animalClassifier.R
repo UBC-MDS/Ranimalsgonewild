@@ -15,7 +15,7 @@ animalClassifier <- function(text){
   ratio <- NULL
 
   animal_list <- c("Duck", "Monkey", "Giraffe", "Whale")
-  cleaned_text <- gsub('[[:punct:]]+','',text) |>
+  cleaned_text <- gsub('[[:punct:]]+','',text)  |>
     strsplit(' ') |>
     unlist()
 

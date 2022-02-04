@@ -1,4 +1,4 @@
-#' Title: This function modifies a block of text by randomly replacing a set number of words with wordcloud of a random animal's name.
+#' Title: This function uses a web URL and outputs a wordcloud with its content in the shape of a random animal's name.
 #'
 #' @param link String Character
 #'

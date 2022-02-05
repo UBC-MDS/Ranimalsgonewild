@@ -26,42 +26,68 @@ Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 
 ## Installation
 
-Prior to the installation of `Ranimalsgonewild`, you need to download
-several dependency packages on to your hard drive, for this package to
-work. Note that for `wordcloud2`, you need to download the development
-version of the package.
-
-``` r
-# install.packages("devtools")
-# install.packages("stringr")
-# install.packages("graphics")
-# install.packages("grDevices")
-# install.packages("imager")
-# install.packages("png")
-# install.packages("RCurl")
-# install.packages("XML")
-# install.packages("htm2txt")
-# install.packages("tm")
-# install.packages("SnowballC")
-# install.packages("wordcloud")
-# install.packages("testthat")
-# devtools::install_github("lchiffon/wordcloud2")
-```
-
-After ensuring you have the aforementioned packages, you can install the
-development version of `Ranimalsgonewild` from
-[GitHub](https://github.com/) with:
+The development version of `Ranimalsgonewild` can be downloaded from
+from [GitHub](https://github.com/) with:
 
 ``` r
 # install.packages("devtools")
 devtools::install_github("UBC-MDS/Ranimalsgonewild")
 ```
 
-If you met an error message saying: “Error in load.image(filename) :
-could not find function ‘load.image’”, please make sure to run the
+Please note that the `Ranimalsgonewild` package has been tested on the
+following versions of the packages, and in case the codes do not work
+for you, please download the right version of the dependencies. Note
+that for `wordcloud2`, you need to download the development version of
+the package using the command
+devtools::install_github(“lchiffon/wordcloud2”).
+
+``` r
+devtools: Version 2.4.3
+stringr: Version 1.4.0
+graphics: Version 4.1.2
+grDevices: Version 4.1.2
+imager: Version 0.42.11
+png: Version 0.1-7
+RCurl: Version 1.98-1.5
+XML: Version 3.99-0.8
+htm2txt: Version 2.1.1
+tm: Version 0.7-8
+SnowballC: Version 0.7.0
+wordcloud: Version 2.6
+testthat: Version 3.1.1
+wordcloud2: Version 0.2.2
+```
+
+If you get the following message below during downloading the
+`Ranimalsgonewild` package, please select Option “None”.
+
+``` r
+These packages have more recent versions available.
+It is recommended to update all of them.
+Which would you like to update?
+
+ 1: All                               
+ 2: CRAN packages only                
+ 3: None                              
+ 4: pillar   (1.6.5  -> 1.7.0 ) [CRAN]
+ 5: magrittr (2.0.1  -> 2.0.2 ) [CRAN]
+ 6: rlang    (0.4.12 -> 1.0.1 ) [CRAN]
+ 7: glue     (1.5.1  -> 1.6.1 ) [CRAN]
+ 8: fansi    (0.5.0  -> 1.0.2 ) [CRAN]
+ 9: cli      (3.1.0  -> 3.1.1 ) [CRAN]
+10: tiff     (0.1-10 -> 0.1-11) [CRAN]
+11: testthat (3.1.1  -> 3.1.2 ) [CRAN]
+
+Enter one or more numbers, or an empty line to skip updates:
+```
+
+If you encounter an error message saying: “Error in load.image(filename)
+: could not find function ‘load.image’”, please make sure to run the
 following line to proceed:
 
-    library(imager)
+``` r
+library(imager)
+```
 
 ## Usage
 

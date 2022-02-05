@@ -100,6 +100,11 @@ that you must include the library before runnign any of these functions:
 library(Ranimalsgonewild)
 ```
 
+### **Documentation**
+
+A vignette showing detailed use of the functions can be found
+\[here\](<https://ubc-mds.github.io/Ranimalsgonewild/)>
+
 ### Function 1: animalClassifier
 
 This function takes a sequence of text(character), counts the words in

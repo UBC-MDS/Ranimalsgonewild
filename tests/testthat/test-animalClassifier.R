@@ -25,5 +25,5 @@ test_that("input value type is incorrect", {
 })
 
 test_that("input value length is incorrect", {
-  expect_error(animalClassifier(123))
+  expect_error(animalClassifier(123, "why"))
 })

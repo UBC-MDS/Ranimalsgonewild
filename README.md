@@ -103,7 +103,7 @@ library(Ranimalsgonewild)
 ### **Documentation**
 
 A vignette showing detailed use of the functions can be found
-\[here\](<https://ubc-mds.github.io/Ranimalsgonewild/)>
+[here](https://ubc-mds.github.io/Ranimalsgonewild/)
 
 ### Function 1: animalClassifier
 

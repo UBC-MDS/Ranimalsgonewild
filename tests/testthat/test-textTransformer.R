@@ -25,3 +25,10 @@ test_that("output is not the same as input (unless num_words argument is set to 
 test_that("at least one of the words in output is from the pre-determined list of animals", {
          expect_true(0 < sum(str_count(textTransformer(test3), animal_list)))
 })
+
+test_that("function allowing incorrect inputs", {
+        expect_error(textTransformer(12345))
+        expect_error(textTransformer("premature testing is the root of all evil", num_words="5"))
+        expect_error(textTransformer("12345"))
+        expect_error(textTransformer("premature testing is the root of all evil", num_words=20))
+})

@@ -54,7 +54,8 @@ wordcloud: Version 2.6
 testthat: Version 3.1.1
 wordcloud2: Version 0.2.2
 ```
-If you get the following message below during downloading the `Ranimalsgonewild` package, please select Option "None". 
+
+If you get the following message below during downloading the `Ranimalsgonewild` package, please select Option "None".
 
 ``` r
 These packages have more recent versions available.
@@ -81,6 +82,7 @@ If you encounter an error message saying: "Error in load.image(filename) : could
 ``` r
 library(imager)
 ```
+
 ## Usage
 
 This package can be used in conjunction with any code to read in multiple text files to analyze and compare whole corpuses (your software must call the `Ranimalsgonewild` functions for each text variable). Note that you must include the library before runnign any of these functions:
@@ -91,8 +93,7 @@ library(Ranimalsgonewild)
 
 ### **Documentation**
 
-  
-A vignette showing detailed use of the functions can be found [here](<https://ubc-mds.github.io/Ranimalsgonewild/)>
+A vignette showing detailed use of the functions can be found [here](https://ubc-mds.github.io/Ranimalsgonewild/ )
 
 ### Function 1: animalClassifier
 

@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -20,7 +25,7 @@ text into a wordcloud in block letters of the animal. We have included a
 bonus fourth function for fun, inspired by the popular childhood game -
 MadLibs.
 
-# Contributors
+## Contributors
 
 Kyle Maj, Nagraj Rao, Morgan Rosenberg, Junrong Zhu
 
@@ -39,7 +44,7 @@ following versions of the packages, and in case the codes do not work
 for you, please download the right version of the dependencies. Note
 that for `wordcloud2`, you need to download the development version of
 the package using the command
-devtools::install_github(“lchiffon/wordcloud2”).
+devtools::install_github("lchiffon/wordcloud2").
 
 ``` r
 devtools: Version 2.4.3
@@ -59,7 +64,7 @@ wordcloud2: Version 0.2.2
 ```
 
 If you get the following message below during downloading the
-`Ranimalsgonewild` package, please select Option “None”.
+`Ranimalsgonewild` package, please select Option "None".
 
 ``` r
 These packages have more recent versions available.
@@ -81,8 +86,8 @@ Which would you like to update?
 Enter one or more numbers, or an empty line to skip updates:
 ```
 
-If you encounter an error message saying: “Error in load.image(filename)
-: could not find function ‘load.image’”, please make sure to run the
+If you encounter an error message saying: "Error in load.image(filename)
+: could not find function 'load.image'", please make sure to run the
 following line to proceed:
 
 ``` r
@@ -103,7 +108,10 @@ library(Ranimalsgonewild)
 ### **Documentation**
 
 A vignette showing detailed use of the functions can be found
-[here](https://ubc-mds.github.io/Ranimalsgonewild/)
+[here](https://ubc-mds.github.io/Ranimalsgonewild/). If the image is not
+rendered properly under article, please check out
+[here](<file:///private/var/folders/17/8bss7vzx4tgfp3yg83qb2qbm0000gn/T/RtmpbVqB0i/preview-98f729cc180d.dir/ranimalgonewild-vignette.html>
+).
 
 ### Function 1: animalClassifier
 

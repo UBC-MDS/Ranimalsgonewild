@@ -109,8 +109,8 @@ library(Ranimalsgonewild)
 
 A vignette showing detailed use of the functions can be found
 [here](https://ubc-mds.github.io/Ranimalsgonewild/). If the image is not
-rendered properly under article, please check out
-[here](file:///private/var/folders/17/8bss7vzx4tgfp3yg83qb2qbm0000gn/T/RtmpbVqB0i/preview-98f729cc180d.dir/ranimalgonewild-vignette.html).
+rendered properly under article, please check out [here](file:///private/var/folders/17/8bss7vzx4tgfp3yg83qb2qbm0000gn/T/RtmpbVqB0i/preview-98f729cc180d.dir/ranimalgonewild-vignette.html).
+
 
 ### Function 1: animalClassifier
 
